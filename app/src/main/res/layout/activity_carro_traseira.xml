@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DD0000"
+    android:orientation="vertical"
+    tools:context=".Activity.Qrcode">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:src="@drawable/carrotraseira" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="PEÇAS COM DEFEITO"
+            android:textAlignment="center"
+            android:textColor="#f0f0f0"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbParachoqueTraseiro"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:gravity="center_vertical"
+                    android:text="Parachoque"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/SParachoqueTraseiro"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbPortaTraseira"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:gravity="center_vertical"
+                    android:text="Porta Traseira"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/SPortaTraseira"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbLanternaEsquerda"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:gravity="center_vertical"
+                    android:text="Lanterna Esquerda"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/SLanternaEsquerda"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbLanternaDireita"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:gravity="center_vertical"
+                    android:text="Lanterna Direita"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/SLanternaDireita"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbAsaTraseira"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:gravity="center_vertical"
+                    android:text="Asa Traseira"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/SAsaTraseira"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbEscapamento"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:gravity="center_vertical"
+                    android:text="Escapamento"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/SEscapamento"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbMaçanetaTraseira"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:buttonTint="#f0f0f0"
+                    android:gravity="center_vertical"
+                    android:text="Maçaneta Traseira"
+                    android:textColor="#f0f0f0"
+                    android:textSize="16dp" />
+
+                <Spinner
+                    android:id="@+id/SMaçanetaTraseira"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btOrçamentoTraseira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="30dp"
+            android:text="Adicionar ao Orçamento"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="xl"
+            app:buttonMode="regular"
+            app:roundedCorners="true"
+            app:showOutline="false" />
+    </LinearLayout>
+</LinearLayout>
